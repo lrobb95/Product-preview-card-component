@@ -99,7 +99,7 @@ button {
     background-color: hsl(158, 36%, 37%);
     justify-content: center;
     border: none;
-    border-radius: .25rem;
+    border-radius: .75rem;
     padding: .75rem;
     cursor: pointer;
     transition: all 150ms ease-in-out;
