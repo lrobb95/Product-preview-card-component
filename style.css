@@ -94,7 +94,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .5rem;
+    gap: .2rem;
     color: hsl(0, 0%, 100%);
     background-color: hsl(158, 36%, 37%);
     justify-content: center;
