@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --ff-special: 'Fraunces', sans-serif;
+    --ff-regular: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    place-content: center;
+    min-height: 100%;
+    padding: 1rem;
+    background-color: hsl(30, 38%, 92%);
+}
+
+article.card {
+    display: grid;
+    grid-template-columns: 340px;
+    place-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: .75rem;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card-header {
+    background-image: url(images/image-product-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 15rem;
+}
+
+article.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1.45rem;
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+}
+
+article.product-info h5 {
+    font-family: var(--ff-regular);
+    color: hsl(228, 12%, 48%);
+    font-size: .625rem;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.gap-1rem {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 1rem;
+}
+
+.gap-1rem h1 {
+    font-family: var(--ff-special);
+    font-size: 1.75rem;
+    max-width: 85%;
+}
+
+.price-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.price-container h1 {
+    color: hsl(158, 36%, 37%);
+}
+
+p.perfume-description {
+    font-family: var(--ff-regular);
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    justify-content: center;
+    border: none;
+    border-radius: .25rem;
+    padding: .75rem;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+}
+
+button::before {
+    content: url(images/icon-cart.svg);
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 23%);
+}
+
+@media screen and (width > 720px) {
+    article.card {
+        display: flex;
+        max-height: 450px;
+        width: 550px;
+        gap: 1rem;
+    }
+
+    .card-header {
+        background-image: url(images/image-product-desktop.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 900px;
+    }
+
+    .gap-1rem h1 {
+        font-size: 2rem;
+    }
+}
+
+.attribution {
+    text-align: center;
+}
+
